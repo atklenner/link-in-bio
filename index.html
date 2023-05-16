@@ -1,13 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <main>
+    <article id="links-article" class="links">
+      <div class="bio">
+        <img src="https://picsum.photos/250/250" alt="" />
+        <h1>Person Name</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          ratione voluptatum, itaque maiores magnam tempora quos quo
+          consequatur voluptatem? Debitis exercitationem eius minus, inventore
+          quis quia perferendis vel est adipisci!
+        </p>
+      </div>
+
+      <ul class="cards">
+        <li>
+          <button data-open="about-article" data-close="links-article">
+            About
+          </button>
+        </li>
+        <li>
+          <button class="primary" data-open="work-article" data-close="links-article">
+            Work
+          </button>
+        </li>
+        <li>
+          <button data-open="contact-article" data-close="links-article">
+            Contact
+          </button>
+        </li>
+      </ul>
+
+      <ul class="socials">
+        <li>
+          <a href="#" class="social">
+            <img src="https://picsum.photos/100/100" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social">
+            <img src="https://picsum.photos/100/100" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social">
+            <img src="https://picsum.photos/100/100" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social">
+            <img src="https://picsum.photos/100/100" alt="" />
+          </a>
+        </li>
+      </ul>
+    </article>
+    <article id="about-article" class="hidden">
+      <div class="card-head">
+        <h2>About Me</h2>
+        <button data-open="links-article" data-close="about-article">
+          Back
+        </button>
+      </div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        accusantium officia asperiores ducimus inventore dolore iste sit
+        provident placeat vero, hic fuga repudiandae cumque impedit eaque
+        fugiat commodi harum doloremque.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        accusantium officia asperiores ducimus inventore dolore iste sit
+        provident placeat vero, hic fuga repudiandae cumque impedit eaque
+        fugiat commodi harum doloremque.
+      </p>
+    </article>
+    <article id="work-article" class="hidden">
+      <div class="card-head">
+        <h2>My Past Work</h2>
+        <button data-open="links-article" data-close="work-article">
+          Back
+        </button>
+      </div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        accusantium officia asperiores ducimus inventore dolore iste sit
+        provident placeat vero, hic fuga repudiandae cumque impedit eaque
+        fugiat commodi harum doloremque.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        accusantium officia asperiores ducimus inventore dolore iste sit
+        provident placeat vero, hic fuga repudiandae cumque impedit eaque
+        fugiat commodi harum doloremque.
+      </p>
+    </article>
+    <article id="contact-article" class="hidden">
+      <div class="card-head">
+        <h2>Contact Me</h2>
+        <button data-open="links-article" data-close="contact-article">
+          Back
+        </button>
+      </div>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </form>
+    </article>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

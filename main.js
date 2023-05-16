@@ -1,24 +1,26 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import "./css/style.css";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+let buttons = document.querySelectorAll("button");
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    let closeArticle = document.getElementById(button.dataset.close);
+    let openArticle = document.getElementById(button.dataset.open);
 
-setupCounter(document.querySelector('#counter'))
+    if (closeArticle && openArticle) {
+      closeArticle.setAttribute("closing", "");
+      closeArticle.removeAttribute("open");
+      setTimeout(() => {
+        openArticle.classList.toggle("hidden");
+        openArticle.setAttribute("open", "");
+      }, 100);
+      closeArticle.addEventListener(
+        "animationend",
+        () => {
+          closeArticle.classList.toggle("hidden");
+          closeArticle.removeAttribute("closing");
+        },
+        { once: true }
+      );
+    }
+  });
+});

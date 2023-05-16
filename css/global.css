@@ -1,0 +1,28 @@
+body {
+  font-size: var(--step-1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+}
+
+article {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: clamp(300px, 90vw, 1000px);
+
+  background-color: #f2f2f2;
+  padding: var(--big-gap);
+  border-radius: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
