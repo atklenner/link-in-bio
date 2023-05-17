@@ -1,0 +1,12 @@
+/* this should be a component, it is concerned with the laying out of blocks */
+.socials {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--step-1);
+}
+
+@media (min-width: 700px) {
+  .socials {
+    grid-column: span 2;
+  }
+}

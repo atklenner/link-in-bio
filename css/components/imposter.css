@@ -1,0 +1,9 @@
+.imposter {
+  /* could be fixed if you want, good for dialogs */
+  position: var(--positioning, absolute);
+  /* position top left corner to the middle of the container */
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  /* move the element to the middle of the container */
+  transform: translate(-50%, -50%);
+}
