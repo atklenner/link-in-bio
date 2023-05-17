@@ -50,3 +50,11 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+label {
+  display: block;
+}
+
+:focus {
+  border: 3px solid var(--text-1);
+}

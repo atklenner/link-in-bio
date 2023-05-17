@@ -1,6 +1,7 @@
 .media {
   display: flex;
   align-items: center;
+  gap: var(--step-1);
 }
 
 .media > * + * {

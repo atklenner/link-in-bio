@@ -1,0 +1,12 @@
+.message-input {
+  grid-column: span 2;
+}
+
+.message-input > textarea {
+  background-color: var(--surface-1);
+  color: var(--text-1);
+  border-radius: 0.5rem;
+  max-width: 100%;
+  border: none;
+  padding: 0.5em;
+}
