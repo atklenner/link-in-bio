@@ -1,11 +1,12 @@
 .socials {
   display: flex;
   justify-content: space-between;
-  gap: var(--step-1);
+  gap: var(--step-0);
 }
 
 @media (min-width: 768px) {
   .socials {
     grid-column: span 2;
+    gap: var(--step-1);
   }
 }

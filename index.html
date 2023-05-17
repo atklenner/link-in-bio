@@ -10,7 +10,7 @@
 
 <body>
   <main>
-    <article id="links-article" class="primary-card | imposter card |">
+    <article id="links-article" class="card-grid | imposter card |">
       <div class="bio | flow">
         <img src="https://picsum.photos/250/250" alt="" />
         <h1>Person Name</h1>
@@ -115,13 +115,19 @@
           Back
         </button>
       </div>
-      <form class="contact-form" action="#" method="post">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
-        <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <form class="card-grid" action="#" method="post">
+        <div class="text-input | media">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="text-input">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="message-input">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
       </form>
     </article>
   </main>

@@ -1,0 +1,16 @@
+.back-button {
+  color: var(--text-1);
+  background-color: var(--surface-1);
+  border-radius: 0.5rem;
+  border: none;
+  padding-inline: 0.75em;
+  padding-block: 0.25em;
+  font-weight: bold;
+  transition: background-color 100ms ease-in, color 100ms ease-in;
+  cursor: pointer;
+}
+
+.back-button:is(:hover, :focus-visible) {
+  color: var(--surface-1);
+  background-color: var(--brand);
+}

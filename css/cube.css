@@ -1,6 +1,9 @@
 @import "components/imposter.css";
-@import "components/primary-card.css";
+@import "components/card-grid.css";
 @import "components/socials.css";
+@import "components/card-head.css";
+@import "components/center.css";
+@import "components/media.css";
 
 @import "utilities/flow.css";
 @import "utilities/hidden.css";
@@ -10,3 +13,4 @@
 @import "blocks/bio.css";
 @import "blocks/card-button.css";
 @import "blocks/social.css";
+@import "blocks/back-button.css";

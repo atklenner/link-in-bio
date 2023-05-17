@@ -8,12 +8,16 @@
 
 .bio > img {
   border-radius: 0.5rem;
-  max-width: 250px;
+  max-block-size: 200px;
 }
 
 @media (min-width: 768px) {
   .bio {
     align-items: flex-start;
     text-align: left;
+  }
+
+  .bio > img {
+    max-block-size: 250px;
   }
 }

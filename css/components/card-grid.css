@@ -1,11 +1,11 @@
-.primary-card {
+.card-grid {
   display: grid;
 
   gap: var(--step-2);
 }
 
 @media (min-width: 768px) {
-  .primary-card {
+  .card-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
