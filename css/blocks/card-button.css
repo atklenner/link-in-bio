@@ -7,6 +7,7 @@
   border-radius: 0.5rem;
   inline-size: 100%;
   padding-block: 0.75em;
+  cursor: pointer;
 }
 
 .card-button:is(:hover, :focus-visible) {
