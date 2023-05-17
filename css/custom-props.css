@@ -24,8 +24,8 @@
   --gray-11: #0d0f12;
   --gray-12: #030507;
 
-  --orange-3: rgb(255, 192, 120);
   --orange-6: rgb(250, 176, 5);
+  --blue-dark: #a5d8ff;
 
   --brand-light: var(--orange-6);
 
@@ -37,7 +37,7 @@
   --surface-3-light: var(--gray-2);
   --surface-4-light: var(--gray-3);
 
-  --brand-dark: var(--orange-3);
+  --brand-dark: var(--blue-dark);
 
   --text-1-dark: var(--gray-3);
   --text-2-dark: var(--gray-5);

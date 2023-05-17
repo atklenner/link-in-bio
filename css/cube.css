@@ -1,7 +1,11 @@
 @import "components/imposter.css";
+@import "components/primary-card.css";
+@import "components/socials.css";
 
 @import "utilities/flow.css";
 @import "utilities/hidden.css";
+@import "utilities/visually-hidden.css";
 
-@import "blocks/primary-card.css";
-@import "blocks/socials.css";
+@import "blocks/card.css";
+@import "blocks/bio.css";
+@import "blocks/card-button.css";

@@ -1,0 +1,7 @@
+.bio {
+  --flow-space: 0.5em;
+}
+
+.bio > img {
+  border-radius: 0.5rem;
+}
