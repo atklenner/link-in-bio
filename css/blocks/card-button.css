@@ -8,6 +8,7 @@
   inline-size: 100%;
   padding-block: 0.75em;
   cursor: pointer;
+  transition: background-color 100ms ease-in, color 100ms ease-in;
 }
 
 .card-button:is(:hover, :focus-visible) {
