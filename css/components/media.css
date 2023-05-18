@@ -4,6 +4,15 @@
   gap: var(--step-1);
 }
 
+/* lazy way of doing this, it should be a utility class */
+.media > img {
+  border-radius: 0.5rem;
+}
+
 .media > * + * {
   flex-grow: 1;
+}
+
+.media[data-style="right"] {
+  flex-direction: row-reverse;
 }

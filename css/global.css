@@ -39,6 +39,10 @@ h3 {
   max-inline-size: 35ch;
 }
 
+a {
+  color: var(--brand);
+}
+
 p {
   max-inline-size: 65ch;
 }
