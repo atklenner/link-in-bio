@@ -23,10 +23,12 @@
 
 .card-button[data-variant="warn"] {
   background-color: transparent;
-  border: 8px solid red;
+  color: var(--warn);
+  border: 8px solid var(--warn);
 }
 
 .card-button[data-variant="warn"]:is(:hover, :focus-visible) {
-  color: red;
-  outline-color: red;
+  color: var(--surface-1);
+  background-color: var(--warn);
+  outline-color: var(--warn);
 }

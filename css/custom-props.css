@@ -24,8 +24,10 @@
   --gray-11: #0d0f12;
   --gray-12: #030507;
 
-  --orange-6: rgb(250, 176, 5);
+  --blue-light: #228be6;
+  --red-light: #f03e3e;
   --blue-dark: #a5d8ff;
+  --red-dark: #ffa8a8;
 
   --brand-light: var(--orange-6);
 
