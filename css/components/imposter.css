@@ -7,3 +7,7 @@
   /* move the element to the middle of the container */
   transform: translate(-50%, -50%);
 }
+
+.imposter[data-variant="copyright"] {
+  inset-block-start: 97%;
+}
