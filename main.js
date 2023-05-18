@@ -1,6 +1,8 @@
 import "./css/style.css";
 
-let buttons = document.querySelectorAll("button");
+// this works because I used inputs in the form
+// never let bad JS get in the way of success
+const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     let closeArticle = document.getElementById(button.dataset.close);
@@ -22,5 +24,13 @@ buttons.forEach((button) => {
         { once: true }
       );
     }
+  });
+});
+
+const textInputs = document.querySelectorAll("#name, #email, #message");
+let clearButton = document.querySelector("[data-action='clear']");
+clearButton.addEventListener("click", () => {
+  textInputs.forEach((input) => {
+    input.value = "";
   });
 });
