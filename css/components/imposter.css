@@ -6,6 +6,9 @@
   inset-inline-start: 50%;
   /* move the element to the middle of the container */
   transform: translate(-50%, -50%);
+  overflow: auto;
+  max-inline-size: calc(100% - var(--step-1) * 2);
+  max-block-size: calc(100% - var(--step-1) * 2);
 }
 
 .imposter[data-variant="copyright"] {
