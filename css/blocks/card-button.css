@@ -15,3 +15,18 @@
   background-color: var(--brand);
   color: var(--surface-1);
 }
+
+.card-button[data-size="small"] {
+  padding-block: 0.25em;
+  font-size: var(--step-1);
+}
+
+.card-button[data-variant="warn"] {
+  background-color: transparent;
+  border: 8px solid red;
+}
+
+.card-button[data-variant="warn"]:is(:hover, :focus-visible) {
+  color: red;
+  outline-color: red;
+}

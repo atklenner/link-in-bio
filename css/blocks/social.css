@@ -1,16 +1,27 @@
 .social {
-  border-radius: 0.5rem;
-  background-color: var(--surface-1);
-  max-inline-size: 125px;
-}
-
-.social > a {
-  border-radius: 0.5rem;
-  overflow: hidden;
-  display: block;
+  flex-grow: 1;
+  color: var(--text-1);
+  max-inline-size: 150px;
   transition: transform 100ms ease-in;
+  border-radius: 0.5rem;
 }
 
-.social > a:hover {
+.social * {
+  display: block;
+  color: var(--text-1);
+  border-radius: 0.5rem;
+}
+
+.social svg {
+  fill: var(--text-1);
+  aspect-ratio: 1 / 1;
+  transition: fill 100ms ease-in;
+}
+
+.social > a:is(:hover, :focus-visible) {
   transform: translate(5px, -5px);
+}
+
+.social > a:is(:hover, :focus-visible) svg {
+  fill: var(--brand);
 }
