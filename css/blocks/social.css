@@ -2,7 +2,6 @@
   flex-grow: 1;
   color: var(--text-1);
   max-inline-size: 150px;
-  transition: transform 100ms ease-in;
   border-radius: 0.5rem;
 }
 
@@ -16,6 +15,10 @@
   fill: var(--text-1);
   aspect-ratio: 1 / 1;
   transition: fill 100ms ease-in;
+}
+
+.social > a {
+  transition: transform 100ms ease-in;
 }
 
 .social > a:is(:hover, :focus-visible) {
